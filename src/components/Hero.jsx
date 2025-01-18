@@ -1,0 +1,113 @@
+"use client";
+import React from "react";
+import { TypeAnimation } from "react-type-animation";
+import Image from "next/image";
+import {
+  FaFacebookSquare,
+  FaLine,
+  FaGithubSquare,
+  FaReact,
+  FaJs,
+  FaNodeJs,
+} from "react-icons/fa";
+import { RiTailwindCssLine } from "react-icons/ri";
+import { SiMongodb } from "react-icons/si";
+
+const Hero = () => {
+  const Services = [
+    {
+      Maintitle: "สร้างเว็บไซต์ที่รองรับทุกขนาด",
+    },
+    {
+      Subtitle:
+        "เว็บไซต์โหลดเร็ว ทันสมัยปลอดภัยพัฒนาด้วย React, Node.js และTailwind Css ปรึกษาฟรี ",
+    },
+  ];
+
+  return (
+    <section className=" max-w-[1250px] mx-auto md:mb-32">
+      <div className="grid md:grid-cols-2  mt-10 place-items-center mx-8">
+        <div className="max-w-[800px] mb-8  ">
+          <p className="text-gray-200 lg:text-6xl md:text-5xl text-3xl tracking-tight">
+            บริการ <br />
+            <TypeAnimation
+              sequence={[
+                "เว็บไซต์อีคอมเมิร์ซ",
+                1000,
+                "เว็บไซต์บริษัท",
+                1000,
+                "เว็บไซต์จองคิวต่างๆ",
+                1000,
+                "เว็บไซต์ระบบ HR ",
+                1000,
+                "เว็บไซต์โปรเจกหรืองานวิจัย",
+                1000,
+                "เว็บไซต์โรงเรียน",
+                1000,
+                "เว็บไซต์อื่นๆ",
+                1000,
+              ]}
+              style={{ fontSize: "0.8em", display: "inline-block" }}
+              speed={50}
+              repeat={Infinity}
+              className="font-bold italic"
+            />
+          </p>
+          <div className="mt-2">
+            {Services.map((service, index) => (
+              <div className="text-gray-200" key={index}>
+                <h1 className="text-xl md:text-3xl ">{service.Maintitle}</h1>
+                <p className="text-base">{service.Subtitle}</p>
+              </div>
+            ))}
+          </div>
+          <ul className="text-gray-200 flex justify-center md:justify-start  space-x-4  mt-8">
+            <li>
+              <a
+                href="https://www.facebook.com/your.Chakkaphat/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebookSquare size={30} />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://line.me/ti/p/vGMFpZ_C2h"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLine size={30} />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/SERPENTX03"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithubSquare size={30} />
+              </a>
+            </li>
+          </ul>
+          <div className="flex justify-center md:justify-start text-3xl space-x-4 mt-5">
+            <FaReact className="text-sky-400" />
+            <FaJs className="text-yellow-300" />
+            <FaNodeJs className="text-green-400" />
+            <RiTailwindCssLine className="text-sky-500" />
+            <SiMongodb className="text-green-500 " />
+          </div>
+        </div>
+        <Image
+          src="/assets/Imgs/code.jpg"
+          alt="Code Image"
+          width={300}
+          height={300}
+          className="rounded-2xl md:w-[500px] mb-4"
+        />{" "}
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
