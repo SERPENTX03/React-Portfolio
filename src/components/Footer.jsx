@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="max-w-[1300px] border-t mx-auto flex items-center justify-between p-6 md:p-10 text-sm md:text-lg mt-12">
       <div className="space-y-4">
-        <h3 className="text-2xl font-semibold text-gray-300">J.Doe</h3>
+        <h3 className="text-2xl font-semibold text-gray-300">Chakkaphat</h3>
         <div className="flex flex-row gap-4 text-gray-400 ">
           <a href="#">
             {" "}
@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <p className="text-gray-400">@ 2024 J.Doe</p>
+      <p className="text-gray-400">@ 2024 Chakkaphat</p>
     </div>
   );
 };
