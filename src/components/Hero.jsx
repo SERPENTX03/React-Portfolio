@@ -20,7 +20,7 @@ const Hero = () => {
     },
     {
       Subtitle:
-        "เว็บไซต์โหลดเร็ว ทันสมัยปลอดภัยพัฒนาด้วย React, Node.js และTailwind Css ปรึกษาฟรี ",
+        "เว็บไซต์โหลดเร็ว ทันสมัยปลอดภัยพัฒนาด้วย React, Node.js และTailwind Css ",
     },
   ];
 
