@@ -10,8 +10,8 @@ import {
   FaJs,
   FaNodeJs,
 } from "react-icons/fa";
-import { RiTailwindCssLine } from "react-icons/ri";
-import { SiMongodb } from "react-icons/si";
+import { RiTailwindCssLine, RiNextjsFill } from "react-icons/ri";
+import { SiMongodb, SiTypescript } from "react-icons/si";
 
 const Hero = () => {
   const Services = [
@@ -20,35 +20,26 @@ const Hero = () => {
     },
     {
       Subtitle:
-        "เว็บไซต์โหลดเร็ว ทันสมัยปลอดภัยพัฒนาด้วย React, Node.js และTailwind Css ",
+        "เว็บไซต์โหลดเร็ว ทันสมัย React, Node.js และTailwind Css ส่งเว็บผ่าน Github เว็บทำงานในVercle สามารถนำไปลิงค์ไปใช้ได้เลย ผ่านvercel.app",
     },
   ];
 
   return (
-    <section className=" max-w-[1250px] mx-auto md:mb-32">
+    <section className=" max-w-[1250px] mx-auto md:mb-32 mt-40">
       <div className="grid md:grid-cols-2  mt-10 place-items-center mx-8">
         <div className="max-w-[800px] mb-8  ">
           <p className="text-gray-200 lg:text-6xl md:text-5xl text-3xl tracking-tight">
             บริการ <br />
             <TypeAnimation
               sequence={[
-                "เว็บไซต์อีคอมเมิร์ซ",
+                "เว็บไซต์พอร์ตโฟลิโอ",
                 1000,
-                "เว็บไซต์บริษัท",
+                "เว็บไซต์โปรเจกจบ",
                 1000,
-                "เว็บไซต์จองคิวต่างๆ",
-                1000,
-                "เว็บไซต์ระบบ HR ",
-                1000,
-                "เว็บไซต์โปรเจกหรืองานวิจัย",
-                1000,
-                "เว็บไซต์โรงเรียน",
-                1000,
-                "เว็บไซต์อื่นๆ",
-                1000,
+                "เว็บไซต์อื่นๆ ลองคุยก่อนได้",
               ]}
               style={{ fontSize: "0.8em", display: "inline-block" }}
-              speed={50}
+              speed={30}
               repeat={Infinity}
               className="font-bold italic"
             />
@@ -92,14 +83,17 @@ const Hero = () => {
           </ul>
           <div className="flex justify-center md:justify-start text-3xl space-x-4 mt-5">
             <FaReact className="text-sky-400" />
+            <RiNextjsFill className="text-black bg-white rounded-full" />
             <FaJs className="text-yellow-300" />
+            <SiTypescript className="text-blue-500" />
+
             <FaNodeJs className="text-green-400" />
             <RiTailwindCssLine className="text-sky-500" />
             <SiMongodb className="text-green-500 " />
           </div>
         </div>
         <Image
-          src="/assets/Imgs/code.jpg"
+          src="/assets/Imgs/minecraft.png"
           alt="Code Image"
           width={300}
           height={300}

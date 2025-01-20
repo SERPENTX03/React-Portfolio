@@ -2,14 +2,14 @@ import Image from "next/image";
 import React from "react";
 import {
   DiJavascript,
-  DiReact,
   DiNodejs,
-  DiBootstrap,
   DiHtml5,
-  DiMongodb,
   DiGithubBadge,
   DiCss3,
 } from "react-icons/di";
+import { SiTypescript } from "react-icons/si";
+
+import { RiTailwindCssFill, RiReactjsFill, RiNextjsFill } from "react-icons/ri";
 
 const About = () => {
   const abouts = [
@@ -20,7 +20,7 @@ const About = () => {
     {
       title: "Middle",
       description:
-        "พัฒนาด้วย React Tailwind Next หลังบ้านเป็น NodeJS ฐานข้อมูลMogodb",
+        "พัฒนาด้วย React Tailwind Next ถ้ามีหลังบ้านใช้เป็น NodeJS ",
     },
   ];
 
@@ -61,12 +61,11 @@ const About = () => {
         </h2>
         <p className="text-gray-300 mb-4">{abouts[0].description}</p>
         <div className="hidden md:flex flex-wrap gap-4 text-4xl justify-center">
-          <DiHtml5 className="text-orange-600" />
-          <DiCss3 className="text-blue-500" />
+          <RiReactjsFill className="text-blue-500" />
+          <RiNextjsFill className="text-black bg-white rounded-full" />
           <DiJavascript className="text-yellow-300" />
-          <DiBootstrap className="text-purple-500" />
-          <DiNodejs className="text-green-500" />
-          <DiMongodb className="text-green-800" />
+          <SiTypescript className="text-blue-500" />
+          <RiTailwindCssFill className="text-sky-400" />
           <DiGithubBadge className="text-gray-300" />
         </div>
       </div>
@@ -78,12 +77,13 @@ const About = () => {
         </h2>
         <p className="text-gray-300 mb-4">{abouts[1].description}</p>
         <div className="hidden md:flex flex-wrap gap-4 text-4xl justify-center">
-          <DiHtml5 className="text-orange-600" />
-          <DiCss3 className="text-blue-500" />
+          <RiReactjsFill className="text-blue-500" />
+          <RiNextjsFill className="text-black bg-white rounded-full" />
+          <SiTypescript className="text-blue-500" />
+
           <DiJavascript className="text-yellow-300" />
-          <DiBootstrap className="text-purple-500" />
+          <RiTailwindCssFill className="text-sky-400" />
           <DiNodejs className="text-green-500" />
-          <DiMongodb className="text-green-800" />
           <DiGithubBadge className="text-gray-300" />
         </div>
       </div>

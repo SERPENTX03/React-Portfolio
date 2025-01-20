@@ -4,19 +4,19 @@ const Service = () => {
   const services = [
     {
       pack: "เริ่มต้น",
-      price: "800 - 1,500 THB",
+      price: "700 - 1,500 THB",
       content:
-        "เว็บหน้าเดียวรองรับการเลื่อน เขียนตามดีไซน์ลูกค้า เหมาะสำหรับการใช้งานเบื้องต้น รองรับทุกขนาดหน้าจอ",
+        "เว็บหน้าเดียวรองรับการเลื่อน เขียนตามดีไซน์ลูกค้า โปรเจกจบ พอร์ตโฟลิโอ ",
     },
     {
       pack: "ระดับกลาง",
       price: "2,000 - 4,000 THB",
-      content:"เขียนตามดีไซน์ลูกค้า เปลี่ยนหน้าได้ 3-4หน้า รองรับทุกขนาดหน้าจอ" 
+      content:"เขียนตามดีไซน์ลูกค้า ราคาตามความยากง่าย สามารถทักมาคุยก่อนได้ครับ" 
        },
   
   ];
   return (
-    <section className="max-w-[1200px] mx-auto my-4">
+    <section className="max-w-[1200px] mx-auto my-4" id="service">
       <div className="grid grid-cols-1 mx-6 md:grid-cols-2  gap-6">
         {services.map((service, index) => (
           <div

@@ -8,55 +8,55 @@ const projects = [
   {
     image: "/assets/Imgs/project1.jpg",
     title: "Project 1",
-    description: "UI for frontend developer using React",
+    description: "ในอนาคต",
     links: {
       site: "#",
-      github: "#",
+      github: "https://github.com/SERPENTX03",
     },
   },
   {
     image: "/assets/Imgs/project2.jpg",
     title: "Project 2",
-    description: "UI for frontend developer using React",
+    description: "ในอนาคต",
     links: {
       site: "#",
-      github: "#",
+      github: "https://github.com/SERPENTX03",
     },
   },
   {
     image: "/assets/Imgs/project3.jpg",
     title: "Project 3",
-    description: "UI for frontend developer using React",
+    description: "ในอนาคต",
     links: {
       site: "#",
-      github: "#",
+      github: "https://github.com/SERPENTX03",
     },
   },
   {
     image: "/assets/Imgs/project3.jpg",
     title: "Project 4",
-    description: "UI for frontend developer using React",
+    description: "ในอนาคต",
     links: {
       site: "#",
-      github: "#",
+      github: "https://github.com/SERPENTX03",
     },
   },
   {
     image: "/assets/Imgs/project2.jpg",
     title: "Project 5",
-    description: "UI for frontend developer using React",
+    description: "ในอนาคต",
     links: {
       site: "#",
-      github: "#",
+      github: "https://github.com/SERPENTX03",
     },
   },
   {
     image: "/assets/Imgs/project1.jpg",
     title: "Project 6",
-    description: "UI for frontend developer using React",
+    description: "ในอนาคต",
     links: {
       site: "#",
-      github: "#",
+      github: "https://github.com/SERPENTX03",
     },
   },
   
