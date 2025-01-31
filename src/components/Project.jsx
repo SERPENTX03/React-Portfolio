@@ -6,12 +6,12 @@ import { AiFillGithub } from "react-icons/ai";
 
 const projects = [
   {
-    image: "/assets/Imgs/project1.jpg",
+    image: "/assets/Imgs/project1.png",
     title: "Project 1",
-    description: "ในอนาคต",
+    description: "อัพโหลดที่พัก ล็อกอิน Goggle,Facebook มีกดถูกใจกดแชร์ แสดงที่พักตามที่อัพโหลด",
     links: {
-      site: "#",
-      github: "https://github.com/SERPENTX03",
+      site: "https://workshop-camping-frist-61cdb2gqn-serpentx03s-projects.vercel.app/",
+      github: "https://github.com/SERPENTX03/Workshop-Camping",
     },
   },
   {
@@ -51,7 +51,7 @@ const projects = [
     },
   },
   {
-    image: "/assets/Imgs/project1.jpg",
+    image: "/assets/Imgs/project1.png",
     title: "Project 6",
     description: "ในอนาคต",
     links: {
@@ -77,6 +77,7 @@ const Portfolio = () => {
         <div className="w-full h-80 relative">
           {/* Dynamic Image */}
           <Image
+          data-aos='fade-down'
             src={selectedProject.image}
             alt={selectedProject.title}
             layout="fill"

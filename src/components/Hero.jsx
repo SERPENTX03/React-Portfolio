@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
 import Image from "next/image";
 import {
@@ -12,6 +12,8 @@ import {
 } from "react-icons/fa";
 import { RiTailwindCssLine, RiNextjsFill } from "react-icons/ri";
 import { SiMongodb, SiTypescript } from "react-icons/si";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Hero = () => {
   const Services = [
@@ -23,6 +25,10 @@ const Hero = () => {
         "เว็บไซต์โหลดเร็ว ทันสมัย React, Node.js และTailwind Css ส่งเว็บผ่าน Github เว็บทำงานในVercle สามารถนำไปลิงค์ไปใช้ได้เลย ผ่านvercel.app",
     },
   ];
+
+  useEffect(() => {
+    AOS.init({ duration: 800, offset: 120 ,once: false});
+  }, []);
 
   return (
     <section className=" max-w-[1250px] mx-auto md:mb-32 mt-40">
@@ -93,6 +99,7 @@ const Hero = () => {
           </div>
         </div>
         <Image
+        data-aos='fade-up'
           src="/assets/Imgs/minecraft.png"
           alt="Code Image"
           width={300}

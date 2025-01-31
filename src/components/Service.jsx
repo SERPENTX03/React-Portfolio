@@ -1,31 +1,18 @@
 import React from "react";
+import { dataService } from "@/utils/data";
 
 const Service = () => {
-  const services = [
-    {
-      pack: "เริ่มต้น",
-      price: "700 - 1,500 THB",
-      content:
-        "เว็บหน้าเดียวรองรับการเลื่อน เขียนตามดีไซน์ลูกค้า โปรเจกจบ พอร์ตโฟลิโอ ",
-    },
-    {
-      pack: "ระดับกลาง",
-      price: "2,000 - 4,000 THB",
-      content:"เขียนตามดีไซน์ลูกค้า ราคาตามความยากง่าย สามารถทักมาคุยก่อนได้ครับ" 
-       },
-  
-  ];
   return (
-    <section className="max-w-[1200px] mx-auto my-4" id="service">
-      <div className="grid grid-cols-1 mx-6 md:grid-cols-2  gap-6">
-        {services.map((service, index) => (
+    <section className="max-w-[1200px] mx-auto my-10 " id="service">
+      <div className="grid grid-cols-1 mx-6  gap-6">
+        {dataService().map((service, index) => (
           <div
             key={index}
             className="glass p-6 text-gray-300 flex flex-col items-center"
           >
             <h2>{service.pack}</h2>
-            <p>{service.price}</p>
-            <p>{service.content}</p>
+            <p>{service.detail}</p>
+     
           </div>
         ))}
       </div>

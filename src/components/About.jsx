@@ -1,15 +1,15 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import {
   DiJavascript,
   DiNodejs,
-  DiHtml5,
   DiGithubBadge,
-  DiCss3,
 } from "react-icons/di";
 import { SiTypescript } from "react-icons/si";
 
 import { RiTailwindCssFill, RiReactjsFill, RiNextjsFill } from "react-icons/ri";
+
 
 const About = () => {
   const abouts = [
@@ -45,7 +45,8 @@ const About = () => {
             backdrop-blur-lg rounded-lg"
         >
           <Image
-            src="/assets/Imgs/project1.jpg"
+          data-aos='fade-right'
+            src="/assets/Imgs/project1.png"
             alt="Code Image"
             width={300}
             height={300}
@@ -102,6 +103,7 @@ const About = () => {
             backdrop-blur-lg rounded-lg"
         >
           <Image
+          data-aos='fade-left'
             src="/assets/Imgs/project2.jpg"
             alt="Code Image"
             width={300}

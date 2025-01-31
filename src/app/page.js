@@ -1,5 +1,5 @@
 import About from '@/components/About'
-import Portfolio from '@/components/Portfolio'
+import Project from '@/components/Project'
 import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
 import React from 'react'
@@ -15,7 +15,7 @@ const page = () => {
       <Hero />
       <Service />
       <About />
-      <Portfolio />
+      <Project />
       <Contact />
       <Footer />
     </div>
