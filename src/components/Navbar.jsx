@@ -38,15 +38,7 @@ const Navbar = () => {
             ></span>
           </li>
 
-          <li className="relative group">
-            <Link to="portfolio" smooth={true} offset={50} duration={500}>
-              Protfolio
-            </Link>
-            <span
-              className="absolute bottom-0 left-0 w-full h-1 bg-sky-600 transform scale-x-0 group-hover:scale-100
-          transition-transform duration-300 ease-in-out"
-            ></span>
-          </li>
+     
 
           <li className="relative group">
             <Link to="contact" smooth={true} offset={50} duration={500}>
@@ -106,21 +98,7 @@ const Navbar = () => {
               </Link>
             </li>
 
-            <li className="relative group p-4 border-b">
-              <Link
-                to="portfolio"
-                smooth={true}
-                offset={50}
-                duration={500}
-                className="relative inline-block"
-              >
-                Protfolio
-                <span
-                  className="absolute bottom-0 left-0 w-full h-1 bg-sky-600 transform scale-x-0 group-hover:scale-100
-          transition-transform duration-300 ease-in-out"
-                ></span>
-              </Link>
-            </li>
+   
 
             <li className="relative group border-b p-4">
               <Link

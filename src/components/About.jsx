@@ -9,6 +9,8 @@ import {
 import { SiTypescript } from "react-icons/si";
 
 import { RiTailwindCssFill, RiReactjsFill, RiNextjsFill } from "react-icons/ri";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 const About = () => {
@@ -23,6 +25,11 @@ const About = () => {
         "พัฒนาด้วย React Tailwind Next ถ้ามีหลังบ้านใช้เป็น NodeJS ",
     },
   ];
+
+    useEffect(() => {
+      AOS.init({ duration: 800, offset: 120 ,once: false});
+    }, []);
+  
 
   return (
     <div

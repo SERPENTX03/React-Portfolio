@@ -1,0 +1,21 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+        
+model Project {
+  id          Int      @id @default(autoincrement())
+  title       String   @db.VarChar(255)  // ชื่อโปรเจกต์
+  description String   @db.Text          // รายละเอียดโปรเจกต์
+  imageUrl    String   @db.Text          // URL รูปภาพ
+  githubUrl   String?  @db.VarChar(255)  // URL GitHub
+  siteUrl     String?   @db.VarChar(255)  // URL เว็บไซต์
+  createdAt   DateTime @default(now())   // วันเวลาที่สร้าง
+  updatedAt   DateTime @updatedAt        // วันเวลาที่อัปเดตล่าสุด
+}
