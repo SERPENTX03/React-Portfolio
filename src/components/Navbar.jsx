@@ -10,13 +10,16 @@ const Navbar = () => {
     setNav(!nav);
   };
 
-  const closeNav = () => {
-    setNav(false);
-  };
+ 
   return (
-    <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#282727] bg-opacity-100">
+    <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10
+     bg-zinc-950 bg-opacity-100">
       <div className=" flex text-2xl items-center justify-between text-gray-200 px-6 max-w-[1300px] mx-auto h-24">
-        <a href="">รับทำเว็บไซต์</a>
+        <a className="font-bold text-3xl" href="/">
+          <span>
+            Ser<span className="bg-gradient-to-br from-blue-400 to-purple-400 text-transparent bg-clip-text">pentx</span>
+          </span>
+        </a>
         {/* Menu Pc */}
         <ul className="hidden md:flex gap-12 z-10 cursor-pointer">
           <li className="relative group">
@@ -24,7 +27,7 @@ const Navbar = () => {
               Service
             </Link>
             <span
-              className="absolute bottom-0 left-0 w-full h-1 bg-sky-600 transform scale-x-0 group-hover:scale-100
+              className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-br from-blue-400 to-purple-400 transform scale-x-0 group-hover:scale-100
           transition-transform duration-300 ease-in-out"
             ></span>
           </li>
@@ -33,19 +36,17 @@ const Navbar = () => {
               About
             </Link>
             <span
-              className="absolute bottom-0 left-0 w-full h-1 bg-sky-600 transform scale-x-0 group-hover:scale-100
+              className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-br from-blue-400 to-purple-400 transform scale-x-0 group-hover:scale-100
           transition-transform duration-300 ease-in-out"
             ></span>
           </li>
-
-     
 
           <li className="relative group">
             <Link to="contact" smooth={true} offset={50} duration={500}>
               Contact
             </Link>
             <span
-              className="absolute bottom-0 left-0 w-full h-1 bg-sky-600 transform scale-x-0 group-hover:scale-100
+              className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-br from-blue-400 to-purple-400 transform scale-x-0 group-hover:scale-100
           transition-transform duration-300 ease-in-out"
             ></span>
           </li>
@@ -77,7 +78,7 @@ const Navbar = () => {
               >
                 Service
                 <span
-                  className="absolute bottom-0 left-0 w-full h-1 bg-sky-600 transform scale-x-0 group-hover:scale-100 
+                  className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-br from-blue-400 to-purple-400 transform scale-x-0 group-hover:scale-100 
           transition-transform duration-300 ease-in-out origin-left"
                 ></span>
               </Link>
@@ -92,13 +93,11 @@ const Navbar = () => {
               >
                 About
                 <span
-                  className="absolute bottom-0 left-0 w-full h-1 bg-sky-600 transform scale-x-0 group-hover:scale-100 
+                  className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-br from-blue-400 to-purple-400 transform scale-x-0 group-hover:scale-100 
           transition-transform duration-300 ease-in-out origin-left"
                 ></span>
               </Link>
             </li>
-
-   
 
             <li className="relative group border-b p-4">
               <Link
@@ -110,7 +109,7 @@ const Navbar = () => {
               >
                 Contact
                 <span
-                  className="absolute bottom-0 left-0 w-full h-1 bg-sky-600 transform scale-x-0 group-hover:scale-100
+                  className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-br from-blue-400 to-purple-400 transform scale-x-0 group-hover:scale-100
           transition-transform duration-300 ease-in-out"
                 ></span>
               </Link>
