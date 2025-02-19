@@ -6,13 +6,11 @@ import { IoLogoJavascript, IoLogoCss3 } from "react-icons/io";
 import { SiPrisma, SiMongodb, SiMysql, SiTypescript } from "react-icons/si";
 import Marquee from "react-fast-marquee";
 
-// 🔹 เก็บไอคอนทั้งหมด
 const icons = [
   FaHtml5, IoLogoCss3, IoLogoJavascript, RiNextjsFill, SiTypescript,
   FaReact, RiTailwindCssFill, FaNodeJs, SiPrisma, SiMongodb, SiMysql
 ];
 
-// 🔹 กำหนดสีของแต่ละไอคอน
 const iconColors = {
   FaHtml5: "#E44D26",        
   IoLogoCss3: "#1572B6",      
@@ -29,8 +27,8 @@ const iconColors = {
 
 // 🔹 แบ่ง Array ออกเป็น 2 กลุ่ม
 const half = Math.ceil(icons.length / 2);
-const firstRowIcons = icons.slice(0, half); // ครึ่งแรก
-const secondRowIcons = icons.slice(half);   // ครึ่งหลัง
+const firstRowIcons = icons.slice(0, half); 
+const secondRowIcons = icons.slice(half);   
 
 const IconDev = () => {
   return (
